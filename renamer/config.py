@@ -21,7 +21,7 @@ class Config:
         TIME_GAP = int(os.environ.get("TIME_GAP", "")) if os.environ.get("TIME_GAP", "") else None
     except:
         TIME_GAP = None
-        logger.warning("Give the timegap in seconds. Dont use letters 😑")
+        logger.warning("Give the timegap in seconds. Dont use letters ")
     TIME_GAP_STORE = {}
     try:
         TRACE_CHANNEL = int(os.environ.get("TRACE_CHANNEL")) if os.environ.get("TRACE_CHANNEL", "") else None
